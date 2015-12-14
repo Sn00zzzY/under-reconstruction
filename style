@@ -1,0 +1,212 @@
+@keyframes gearrotateleft {
+	0% {
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		trasform: rotate(360deg);
+	}
+}
+@keyframes gearrotateright {
+	0% {
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
+	}
+	100% {
+	-webkit-transform: rotate(-360deg);
+		trasform: rotate(-360deg);
+	}
+}
+@keyframes appearing {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/*Main configs*/
+html {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	background: rgb(255, 255, 255);
+	font-size: 18px;
+	color: rgb(109, 110, 113);
+	height: 100%;
+}
+body {
+	min-width: 1250px;
+	min-height: 100%;
+}
+.wrapper {
+	position: relative;
+	margin: 0 auto -100px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	min-width: 1220px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	overflow: hidden;
+}
+.centerized {
+	position: relative;
+	margin: 0 auto;
+	width: 62.5%;
+	min-height: 100%;
+	height: 100%;
+	height: auto !important;
+	overflow: hidden;
+}
+footer, .push {
+	clear: both;
+	height: 25px;
+}
+section, h1, li, img, .header-social, .col-right-bottom, .eb-social, .header-nav li, .wrapper, .section-twelve .centerized, .feedback-form, .centerized, .section-one
+.section-three, .section-five, .section-seven, .section-nine, .section-eleven, .event-submit, .event-cont {
+	transition: width 1s ease-in-out, left 1.5s ease-in-out, height 1.5s ease-in-out, margin 1.5s ease-in-out;
+}
+*:focus {
+	outline: none;
+}
+
+/*for FireFox*/
+::-moz-focus-inner, ::-moz-focus-outer {
+	border: 0px;
+	outline: none;
+}
+
+/*for IE8 */
+input:focus {
+	outline: none;
+}
+h1 {
+	margin: 0 0 60px 0;
+	color: #137bab;
+	font: normal normal 40px 'Ubuntu Condensed', sans-serif;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+}
+.section {
+	overflow: hidden;
+	z-index: 99;
+}
+
+/*.wrapper .fa-arrow-circle-up {
+	position: fixed;
+	opacity: .3;
+	bottom: 105px;
+	right: 25px;
+	font-size: 100px !important;
+	color: #60b5e4;
+	cursor: pointer;
+	transition: font-size .1s .1s ease-in, opacity .1s .1s ease-in;
+	z-index: 98;
+}
+.fa-arrow-circle-up:hover {
+	opacity: 1;
+	font-size: 105px !important;
+	text-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1.0);
+	color: #60b5e4;
+}*/
+
+.wrapper {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+}
+.devices-cont {
+	position: relative;
+	-ms-flex-item-align: center;
+	    -webkit-align-self: center;
+	        align-self: center;
+	margin: 2% 0 auto;
+	width: 85%;
+}
+.devices {
+	width: 100%;
+}
+.devices-display {
+	position: absolute;
+	opacity: 0;
+}
+.devices-display-mac {
+	top: 9%;
+	left: 14%;
+	width: 53%;
+}
+.devices-display-iphone {
+	top: 47%;
+	left: 65.4%;
+	width: 12%;
+}
+.devices-display-ipad {
+	top: 17.5%;
+	left: 79.5%;
+	width: 17.5%;
+}
+.devices-display-mac {
+	animation: appearing 17s 4s ease-in forwards;
+}
+.devices-display-iphone {
+	animation: appearing 13s 6s ease-in forwards;
+}
+.devices-display-ipad {
+	animation: appearing 14s 5s ease-in forwards;
+}
+.pencil-cont {
+	position: absolute;
+	top: -2%;
+	left: 6%;
+	width: 65%;
+	height: 80%;
+}
+.pencil-cont svg {
+	position: absolute;
+	top: 45px;
+	left: 17%;
+	width: 100%;
+}
+
+/*Footer*/
+footer {
+	position: relative;
+	min-height: 100px;
+}
+.gear-cont {
+  	position: relative;
+}
+.gear {
+  	position: absolute;
+  	width: 5%;
+}
+.gear1 {
+ 	top: -50px;
+ 	left: 30px;
+	-webkit-animation: gearrotateleft 45s linear infinite;
+	        animation: gearrotateleft 45s linear infinite;
+}
+.gear2 {
+	top: 25px;
+	left: 20px;
+	-webkit-animation: gearrotateleft 4s linear infinite;
+	        animation: gearrotateleft 4s linear infinite;
+}
+.gear3 {
+	top: 10px;
+	left: -15px;
+	-webkit-animation: gearrotateright 15s linear infinite;
+	        animation: gearrotateright 15s linear infinite;
+}

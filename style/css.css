@@ -365,7 +365,10 @@ footer {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-
+	.centerized {min-height: 320px !important; height: 320px !important;}
+  	html {min-height: 320px !important; height: 320px !important;}
+  	body {min-height: 320px !important; height: 320px !important;}
+  	.wrapper {min-height: 320px !important;height: 320px !important;}
 }
 
 /* ----------- iPhone 6 ----------- */

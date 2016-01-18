@@ -163,13 +163,13 @@ a {
 	width: 17.5%;
 }
 .devices-display-mac {
-	animation: appearing 3s 2s ease-in forwards;
+	animation: appearing 2s 1s ease-in forwards;
 }
 .devices-display-iphone {
-	animation: appearing 4s 3s ease-in forwards;
+	animation: appearing 3s 2s ease-in forwards;
 }
 .devices-display-ipad {
-	animation: appearing 5s 4s ease-in forwards;
+	animation: appearing 4s 3s ease-in forwards;
 }
 .pencil-cont {
 	position: absolute;

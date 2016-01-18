@@ -26,6 +26,12 @@
 	}
 }
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 
 /*Main configs*/
 html {
